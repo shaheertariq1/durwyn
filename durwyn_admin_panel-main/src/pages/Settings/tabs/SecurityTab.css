@@ -1,0 +1,113 @@
+.security-tab__sessions-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.security-tab__revoke-all {
+  flex: none;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-red);
+  cursor: pointer;
+}
+
+.security-tab__revoke-all:hover,
+.security-tab__revoke-all:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+.security-tab__sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.security-tab__session-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10.5px;
+  border-radius: 7px;
+  background: #1e2330;
+}
+
+.security-tab__session-info {
+  display: flex;
+  align-items: center;
+  gap: 10.5px;
+  min-width: 0;
+}
+
+.security-tab__session-dot {
+  flex: none;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #6b738a;
+}
+
+.security-tab__session-dot--current {
+  background: var(--admin-accent);
+}
+
+.security-tab__session-device {
+  margin: 0;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: #e8edf5;
+}
+
+.security-tab__session-meta {
+  margin: 0;
+  font-size: 10px;
+  color: #6b738a;
+}
+
+.security-tab__revoke {
+  flex: none;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-red);
+  cursor: pointer;
+}
+
+.security-tab__revoke:hover,
+.security-tab__revoke:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+.security-tab__ip-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border: 1.085px solid var(--admin-border);
+  border-radius: 7px;
+  background: #1e2330;
+  color: #fff;
+  font-family: inherit;
+  font-size: 10.5px;
+  font-weight: 500;
+  line-height: 14px;
+  resize: vertical;
+}
+
+.security-tab__ip-textarea:focus-visible {
+  outline: none;
+  border-color: var(--admin-accent);
+}

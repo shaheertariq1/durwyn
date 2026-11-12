@@ -1,0 +1,32 @@
+.search-input {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1 1 240px;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1.085px solid var(--admin-border);
+  background: var(--admin-bg);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-input input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--admin-text);
+}
+
+.search-input input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-input input::-webkit-search-cancel-button {
+  display: none;
+}

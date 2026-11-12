@@ -1,0 +1,113 @@
+.contacts-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.contacts-page__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.contacts-page__title {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.contacts-page__subtitle {
+  margin: 0;
+  font-size: 10.5px;
+  color: var(--admin-muted);
+}
+
+.contacts-page__add-button {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 7px;
+  background: var(--admin-accent);
+  color: #0a0a0f;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.contacts-page__add-button:hover,
+.contacts-page__add-button:focus-visible {
+  background: var(--admin-accent-hover);
+  outline: none;
+}
+
+.contacts-page__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15.085px;
+  border-radius: 11px;
+  border: 1.085px solid var(--admin-border);
+  background: var(--admin-card);
+}
+
+.contacts-page__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts-page__search {
+  flex: 1 1 260px;
+}
+
+.contacts-page__export-button {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 7px;
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.contacts-page__export-button:hover,
+.contacts-page__export-button:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+}
+
+.contacts-page__table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 640px) {
+  .contacts-page__header {
+    flex-direction: column;
+  }
+
+  .contacts-page__add-button {
+    align-self: flex-start;
+  }
+}

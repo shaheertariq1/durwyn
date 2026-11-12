@@ -1,0 +1,106 @@
+.contacts-table {
+  width: 100%;
+  min-width: 820px;
+}
+
+.contacts-table__row {
+  display: grid;
+  grid-template-columns: minmax(170px, 1.8fr) minmax(100px, 1fr) minmax(130px, 1.2fr) minmax(110px, 1fr)
+    minmax(90px, 0.9fr) 40px;
+  align-items: center;
+  column-gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contacts-table__row--head {
+  border-bottom: 1.085px solid var(--admin-border-strong);
+  padding-bottom: 16px;
+  margin-bottom: 10px;
+}
+
+.contacts-table__row--head .contacts-table__cell {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+}
+
+.contacts-table__body .contacts-table__row {
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.04);
+  padding: 11px 0;
+}
+
+.contacts-table__body .contacts-table__row:last-child {
+  border-bottom: none;
+}
+
+.contacts-table__cell {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font-size: 10.5px;
+  color: var(--admin-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contacts-table__cell--actions {
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.contacts-table__cell--contact {
+  gap: 8.75px;
+}
+
+.contacts-table__identity {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.contacts-table__name {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contacts-table__id {
+  font-size: 10px;
+  color: var(--admin-muted);
+}
+
+.contacts-table__user-link {
+  border: none;
+  background: none;
+  padding: 0;
+  text-align: left;
+  font-family: inherit;
+  font-size: 10.5px;
+  color: var(--admin-text);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contacts-table__user-link:hover,
+.contacts-table__user-link:focus-visible {
+  color: var(--admin-accent);
+  outline: none;
+}
+
+.contacts-table__mono {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.contacts-table__empty {
+  margin: 0;
+  padding: 32px 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--admin-muted);
+}

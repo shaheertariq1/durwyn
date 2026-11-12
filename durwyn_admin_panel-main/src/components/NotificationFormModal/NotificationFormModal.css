@@ -1,0 +1,183 @@
+.notification-form-modal__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(5, 6, 10, 0.72);
+}
+
+.notification-form-modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 580px;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  border: 1.085px solid rgba(255, 255, 255, 0.07);
+  border-radius: 11px;
+  background: var(--admin-card);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.notification-form-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17.5px;
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.07);
+  flex: none;
+}
+
+.notification-form-modal__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.notification-form-modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.483px;
+  height: 24.483px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--admin-text);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.notification-form-modal__close:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.notification-form-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.notification-form-modal__row {
+  display: flex;
+  gap: 16px;
+}
+
+.notification-form-modal__field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.notification-form-modal__field--half {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.notification-form-modal__label {
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-text);
+}
+
+.notification-form-modal__input,
+.notification-form-modal__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9.835px 11.585px;
+  border: 1.085px solid rgba(255, 255, 255, 0.07);
+  border-radius: 7px;
+  background: #1e2330;
+  color: var(--admin-text);
+  font-family: inherit;
+  font-size: 12.25px;
+}
+
+.notification-form-modal__input::placeholder,
+.notification-form-modal__textarea::placeholder {
+  color: #6b738a;
+}
+
+.notification-form-modal__textarea {
+  height: 119px;
+  resize: vertical;
+}
+
+.notification-form-modal__input:focus-visible,
+.notification-form-modal__textarea:focus-visible,
+.notification-form-modal__select-input:focus-visible {
+  outline: none;
+  border-color: var(--admin-accent);
+}
+
+.notification-form-modal__select {
+  position: relative;
+  width: 100%;
+}
+
+.notification-form-modal__select-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9.085px 30px 9.085px 11.085px;
+  border: 1.085px solid rgba(255, 255, 255, 0.07);
+  border-radius: 7px;
+  background: #1e2330;
+  color: var(--admin-text);
+  font-family: inherit;
+  font-size: 12.25px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.notification-form-modal__chevron {
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  transform: translateY(-50%);
+  color: #6b738a;
+  pointer-events: none;
+}
+
+.notification-form-modal__actions {
+  display: flex;
+  gap: 10.5px;
+  padding: 0 16px 16px;
+  flex: none;
+}
+
+.notification-form-modal__button {
+  flex: 1 1 0;
+  padding: 8.75px;
+  border: none;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 12.25px;
+  cursor: pointer;
+}
+
+.notification-form-modal__button--cancel {
+  background: #1e2330;
+  color: var(--admin-text);
+  font-weight: 500;
+}
+
+.notification-form-modal__button--cancel:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.notification-form-modal__button--save {
+  background: var(--admin-accent);
+  color: #0a1a0f;
+  font-weight: 600;
+}
+
+.notification-form-modal__button--save:hover {
+  background: var(--admin-accent-hover);
+}

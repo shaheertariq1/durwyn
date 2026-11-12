@@ -1,0 +1,16 @@
+.user-overview-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17.085px;
+  border-radius: 11px;
+  border: 1.085px solid var(--admin-border);
+  background: var(--admin-card);
+}
+
+.user-overview-card > * {
+  flex: 1 1 260px;
+  min-width: 0;
+}

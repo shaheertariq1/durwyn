@@ -1,0 +1,12 @@
+.platform-tab .settings-toggle-row__description,
+.platform-tab .settings-panel__subtitle {
+  color: #fff;
+}
+
+.platform-tab__maintenance {
+  border-radius: 10px;
+}
+
+.platform-tab__maintenance .settings-panel__head {
+  align-items: center;
+}

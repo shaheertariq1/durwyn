@@ -1,0 +1,54 @@
+.admin-layout {
+  --admin-bg: #0a0a0f;
+  --admin-card: #171a21;
+  --admin-border: rgba(255, 255, 255, 0.1);
+  --admin-border-strong: rgba(255, 255, 255, 0.2);
+  --admin-text: #ffffff;
+  --admin-muted: rgba(255, 255, 255, 0.6);
+  --admin-accent: #22c55e;
+  --admin-accent-hover: #1fb554;
+  --admin-red: #ef4444;
+  --admin-amber: #f59e0b;
+  --admin-blue: #3b82f6;
+  --admin-purple: #8b5cf6;
+  --admin-sidebar-width: 260px;
+  --admin-sidebar-width-compact: 84px;
+
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 100dvh;
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  font-family: 'Inter', var(--sans);
+}
+
+.admin-layout__scrim {
+  display: none;
+}
+
+.admin-layout__main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.admin-layout__content {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: clamp(16px, 2vw, 24px);
+}
+
+@media (max-width: 899px) {
+  .admin-layout__scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    border: none;
+    background: rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+  }
+}

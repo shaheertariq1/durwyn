@@ -1,0 +1,29 @@
+.emergency-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emergency-chart__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.emergency-chart__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--admin-text);
+}
+
+.emergency-chart__legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex: none;
+}

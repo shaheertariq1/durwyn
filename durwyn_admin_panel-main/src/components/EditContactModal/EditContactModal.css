@@ -1,0 +1,131 @@
+.edit-contact-modal__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(5, 6, 10, 0.72);
+}
+
+.edit-contact-modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 336px;
+  border: 1.085px solid rgba(255, 255, 255, 0.07);
+  border-radius: 11px;
+  background: var(--admin-card);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.edit-contact-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17.5px;
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.07);
+}
+
+.edit-contact-modal__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.edit-contact-modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.483px;
+  height: 24.483px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--admin-text);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.edit-contact-modal__close:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.edit-contact-modal__body {
+  display: flex;
+  flex-direction: column;
+  padding: 17.5px;
+}
+
+.edit-contact-modal__field {
+  display: flex;
+  flex-direction: column;
+  gap: 5.25px;
+}
+
+.edit-contact-modal__field + .edit-contact-modal__field {
+  margin-top: 14px;
+}
+
+.edit-contact-modal__label {
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-text);
+}
+
+.edit-contact-modal__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9.835px 11.585px;
+  border: 1.085px solid rgba(255, 255, 255, 0.07);
+  border-radius: 7px;
+  background: #1e2330;
+  color: var(--admin-text);
+  font-family: inherit;
+  font-size: 12.25px;
+}
+
+.edit-contact-modal__input:focus-visible {
+  outline: none;
+  border-color: var(--admin-accent);
+}
+
+.edit-contact-modal__actions {
+  display: flex;
+  gap: 10.5px;
+  padding: 14px 17.5px 17.5px;
+}
+
+.edit-contact-modal__button {
+  flex: 1 1 0;
+  padding: 8.75px;
+  border: none;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 12.25px;
+  cursor: pointer;
+}
+
+.edit-contact-modal__button--cancel {
+  background: #1e2330;
+  color: var(--admin-text);
+  font-weight: 500;
+}
+
+.edit-contact-modal__button--cancel:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.edit-contact-modal__button--save {
+  background: var(--admin-accent);
+  color: #0a1a0f;
+  font-weight: 600;
+}
+
+.edit-contact-modal__button--save:hover {
+  background: var(--admin-accent-hover);
+}

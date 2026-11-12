@@ -1,0 +1,174 @@
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.settings-page__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+/* Shared across every Settings tab. */
+
+.settings-panel-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.settings-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 640px;
+  padding: 17px;
+  border-radius: 11px;
+  border: 1.085px solid var(--admin-border);
+  background: var(--admin-card);
+}
+
+.settings-panel__head {
+  display: flex;
+  align-items: center;
+  gap: 10.5px;
+  width: 100%;
+}
+
+.settings-panel__head-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.settings-panel__title {
+  margin: 0;
+  font-size: 12.25px;
+  font-weight: 600;
+  line-height: 17.5px;
+  color: #e8edf5;
+}
+
+.settings-panel__subtitle {
+  margin: 0;
+  font-size: 10.5px;
+  line-height: 14px;
+  color: #6b738a;
+}
+
+.settings-icon-chip {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31.486px;
+  height: 31.486px;
+  border-radius: 7px;
+}
+
+.settings-icon-chip--green {
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--admin-accent);
+}
+
+.settings-icon-chip--blue {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--admin-blue);
+}
+
+.settings-icon-chip--purple {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--admin-purple);
+}
+
+.settings-icon-chip--amber {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--admin-amber);
+}
+
+.settings-icon-chip--neutral {
+  background: #1e2330;
+  color: var(--admin-text);
+}
+
+.settings-field-row {
+  display: flex;
+  gap: 14px;
+  width: 100%;
+}
+
+.settings-field-row > * {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+.settings-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 14px 0 15px;
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.04);
+}
+
+.settings-toggle-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.settings-toggle-row__title {
+  margin: 0;
+  font-size: 12.25px;
+  font-weight: 500;
+  line-height: 17.5px;
+  color: #e8edf5;
+}
+
+.settings-toggle-row__description {
+  margin: 0;
+  font-size: 10.5px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.settings-save-button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 7px;
+  background: var(--admin-accent);
+  color: var(--admin-bg);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.settings-save-button--sm {
+  font-size: 12.25px;
+  line-height: 17.5px;
+}
+
+.settings-save-button:hover,
+.settings-save-button:focus-visible {
+  background: var(--admin-accent-hover);
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .settings-field-row {
+    flex-direction: column;
+  }
+}

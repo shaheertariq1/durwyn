@@ -1,0 +1,29 @@
+.gps-history-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.gps-history-page__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.gps-history-page__layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+}
+
+@media (max-width: 899px) {
+  .gps-history-page__layout {
+    flex-direction: column;
+  }
+}

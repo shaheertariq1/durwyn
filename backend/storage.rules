@@ -1,0 +1,12 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Production Hardened Rules:
+    // All storage uploads, downloads, and evidence assets are managed server-side
+    // by the FastAPI backend using the Firebase Admin SDK. Direct client access is locked down.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

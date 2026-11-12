@@ -1,0 +1,91 @@
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.settings-field__label {
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-text);
+}
+
+.settings-field--prominent .settings-field__label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #9ca3af;
+}
+
+.settings-field__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 16px;
+  border: 1.085px solid var(--admin-border-strong);
+  background: transparent;
+  transition: border-color 0.15s ease;
+}
+
+.settings-field--prominent .settings-field__control {
+  padding: 16px 12px;
+}
+
+.settings-field__control:focus-within {
+  border-color: var(--admin-accent);
+}
+
+.settings-field__control--filled {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.settings-field__icon {
+  flex: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.settings-field__input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  color: #fff;
+}
+
+.settings-field__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.settings-field__input:disabled {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: not-allowed;
+}
+
+.settings-field__trailing-button {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.settings-field__trailing-button:hover,
+.settings-field__trailing-button:focus-visible {
+  color: #fff;
+  outline: none;
+}

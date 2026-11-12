@@ -1,0 +1,155 @@
+.users-table {
+  width: 100%;
+  min-width: 860px;
+}
+
+.users-table__row {
+  display: grid;
+  grid-template-columns: 28px minmax(170px, 1.6fr) minmax(150px, 1.3fr) minmax(110px, 0.9fr) minmax(88px, 0.7fr)
+    minmax(88px, 0.7fr) minmax(90px, 0.8fr) 66px;
+  align-items: center;
+  column-gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.users-table__row--head {
+  border-bottom: 1.085px solid var(--admin-border-strong);
+  padding-bottom: 16px;
+  margin-bottom: 10px;
+}
+
+.users-table__body .users-table__row {
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.04);
+  padding: 10px 0;
+}
+
+.users-table__body .users-table__row:last-child {
+  border-bottom: none;
+}
+
+.users-table__cell {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font-size: 10.5px;
+  color: var(--admin-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.users-table__cell--checkbox {
+  justify-content: center;
+}
+
+.users-table__head-button {
+  gap: 5.25px;
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  color: var(--admin-text);
+  cursor: pointer;
+}
+
+.users-table__cell--actions-head {
+  justify-content: flex-end;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+}
+
+.users-table__sort-icon {
+  display: inline-flex;
+  color: var(--admin-text);
+  opacity: 0.2;
+  transition: opacity 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.users-table__sort-icon--active {
+  opacity: 1;
+  color: var(--admin-accent);
+}
+
+.users-table__sort-icon--desc {
+  transform: rotate(180deg);
+}
+
+.users-table__cell--name {
+  gap: 8.75px;
+}
+
+.users-table__identity {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.users-table__name-link {
+  border: none;
+  background: none;
+  padding: 0;
+  text-align: left;
+  font-family: inherit;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-text);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.users-table__name-link:hover,
+.users-table__name-link:focus-visible {
+  color: var(--admin-accent);
+  outline: none;
+}
+
+.users-table__id {
+  font-size: 10px;
+  color: var(--admin-muted);
+}
+
+.users-table__mono {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.users-table__cell--actions {
+  justify-content: flex-end;
+  gap: 3.5px;
+  overflow: visible;
+}
+
+.users-table__icon-button {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.483px;
+  height: 24.483px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--admin-text);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.users-table__icon-button:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.users-table__empty {
+  margin: 0;
+  padding: 32px 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--admin-muted);
+}

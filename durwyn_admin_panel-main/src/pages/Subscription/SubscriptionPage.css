@@ -1,0 +1,92 @@
+.subscription-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.subscription-page__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.subscription-page__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.subscription-page__assign-button {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 7px;
+  background: var(--admin-accent);
+  color: #0a0a0f;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.subscription-page__assign-button:hover,
+.subscription-page__assign-button:focus-visible {
+  background: var(--admin-accent-hover);
+  outline: none;
+}
+
+.subscription-page__kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.subscription-page__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15.085px;
+  border-radius: 11px;
+  border: 1.085px solid var(--admin-border);
+  background: var(--admin-card);
+}
+
+.subscription-page__table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 899px) {
+  .subscription-page__kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .subscription-page__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subscription-page__assign-button {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .subscription-page__kpi-grid {
+    grid-template-columns: 1fr;
+  }
+}

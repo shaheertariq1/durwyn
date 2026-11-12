@@ -1,0 +1,117 @@
+// Local mock data standing in for the Payments API. Each row cross-references
+// src/data/mockUsers.js by userId (only paid — non-"free" — plans appear here,
+// consistent with those users' own payment history) so this admin-wide
+// transaction log stays in sync with a user's individual profile.
+
+export const statusLabels = { success: 'Success', failed: 'Failed', refunded: 'Refunded' }
+export const statusTone = { success: 'green', failed: 'red', refunded: 'amber' }
+
+export const kpiSummary = [
+  { id: 'revenue', label: 'Total Revenue', value: '$69.96', icon: 'kpi-payment-revenue-icon', tint: 'green', valueTone: 'green' },
+  { id: 'successful', label: 'Successful', value: '4', icon: 'kpi-payment-success-icon', tint: 'green', valueTone: 'green' },
+  { id: 'failed', label: 'Failed', value: '1', icon: 'kpi-payment-failed-icon', tint: 'red', valueTone: 'red' },
+  { id: 'refunded', label: 'Refunded', value: '1', icon: 'kpi-payment-refunded-icon', tint: 'amber', valueTone: 'amber' },
+]
+
+export const payments = [
+  {
+    id: 'PAY001',
+    userId: 'U001',
+    name: 'Sarah Mitchell',
+    plan: 'premium',
+    amount: 19.99,
+    method: 'Visa •••• 4242',
+    status: 'success',
+    date: '2024-07-01',
+  },
+  {
+    id: 'PAY002',
+    userId: 'U004',
+    name: 'Daniel Rivera',
+    plan: 'premium',
+    amount: 19.99,
+    method: 'Mastercard •••• 8888',
+    status: 'success',
+    date: '2024-07-01',
+  },
+  {
+    id: 'PAY003',
+    userId: 'U002',
+    name: 'James Carter',
+    plan: 'standard',
+    amount: 9.99,
+    method: 'PayPal',
+    status: 'success',
+    date: '2024-07-02',
+  },
+  {
+    id: 'PAY004',
+    userId: 'U005',
+    name: 'Priya Nair',
+    plan: 'standard',
+    amount: 9.99,
+    method: 'Visa •••• 1111',
+    status: 'failed',
+    date: '2024-07-03',
+  },
+  {
+    id: 'PAY005',
+    userId: 'U007',
+    name: 'Lena Fischer',
+    plan: 'premium',
+    amount: 19.99,
+    method: 'Apple Pay',
+    status: 'refunded',
+    date: '2024-06-28',
+  },
+  {
+    id: 'PAY006',
+    userId: 'U010',
+    name: 'Kwame Asante',
+    plan: 'premium',
+    amount: 19.99,
+    method: 'Visa •••• 5555',
+    status: 'success',
+    date: '2024-07-05',
+  },
+  {
+    id: 'PAY007',
+    userId: 'U008',
+    name: 'Omar Hassan',
+    plan: 'standard',
+    amount: 9.99,
+    method: 'Mastercard •••• 4470',
+    status: 'success',
+    date: '2024-05-14',
+  },
+  {
+    id: 'PAY008',
+    userId: 'U001',
+    name: 'Sarah Mitchell',
+    plan: 'premium',
+    amount: 19.99,
+    method: 'Visa •••• 4242',
+    status: 'success',
+    date: '2024-06-01',
+  },
+  {
+    id: 'PAY009',
+    userId: 'U002',
+    name: 'James Carter',
+    plan: 'standard',
+    amount: 9.99,
+    method: 'Mastercard •••• 1188',
+    status: 'success',
+    date: '2024-06-03',
+  },
+  {
+    id: 'PAY010',
+    userId: 'U005',
+    name: 'Priya Nair',
+    plan: 'standard',
+    amount: 9.99,
+    method: 'Visa •••• 3390',
+    status: 'success',
+    date: '2024-06-02',
+  },
+]

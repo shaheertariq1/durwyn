@@ -1,0 +1,31 @@
+.user-detail-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.user-detail-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--admin-text);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.user-detail-page__back:hover {
+  color: var(--admin-accent);
+}
+
+.user-detail-page__panel {
+  width: 100%;
+}

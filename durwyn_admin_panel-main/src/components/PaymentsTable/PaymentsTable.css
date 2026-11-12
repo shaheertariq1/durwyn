@@ -1,0 +1,80 @@
+.payments-table {
+  width: 100%;
+  min-width: 860px;
+}
+
+.payments-table__row {
+  display: grid;
+  grid-template-columns:
+    minmax(70px, 0.8fr) minmax(130px, 1.5fr) minmax(90px, 1.1fr) minmax(80px, 0.9fr)
+    minmax(140px, 1.8fr) minmax(90px, 1.1fr) minmax(90px, 1.1fr) 40px;
+  align-items: center;
+  column-gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.payments-table__row--head {
+  border-bottom: 1.085px solid var(--admin-border-strong);
+  padding-bottom: 16px;
+  margin-bottom: 10px;
+}
+
+.payments-table__body .payments-table__row {
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.04);
+  padding: 11px 0;
+}
+
+.payments-table__body .payments-table__row:last-child {
+  border-bottom: none;
+}
+
+.payments-table__cell {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font-size: 10.5px;
+  color: var(--admin-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.payments-table__row--head .payments-table__cell {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+}
+
+.payments-table__cell--actions {
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.payments-table__cell--user {
+  gap: 7px;
+}
+
+.payments-table__name {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.payments-table__amount {
+  font-weight: 600;
+}
+
+.payments-table__mono {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.payments-table__empty {
+  margin: 0;
+  padding: 32px 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--admin-muted);
+}

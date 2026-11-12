@@ -1,0 +1,123 @@
+.emergencies-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.emergencies-page__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.emergencies-page__title {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.emergencies-page__subtitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  font-size: 10.5px;
+}
+
+.emergencies-page__active-stat {
+  display: inline-flex;
+  align-items: center;
+  color: var(--admin-red);
+}
+
+.emergencies-page__live-dot {
+  flex: none;
+  width: 5px;
+  height: 5px;
+  margin-right: 3.5px;
+  border-radius: 999px;
+  background: var(--admin-red);
+  opacity: 0.6;
+  animation: emergencies-page-pulse 1.6s ease-in-out infinite;
+}
+
+.emergencies-page__resolved-stat {
+  color: var(--admin-muted);
+}
+
+@keyframes emergencies-page-pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.emergencies-page__export-button {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 7px;
+  background: #1e2330;
+  color: var(--admin-text);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.emergencies-page__export-button:hover,
+.emergencies-page__export-button:focus-visible {
+  background: #262c3c;
+  outline: none;
+}
+
+.emergencies-page__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15.085px;
+  border-radius: 11px;
+  border: 1.085px solid var(--admin-border);
+  background: var(--admin-card);
+}
+
+.emergencies-page__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.emergencies-page__search {
+  flex: 2 1 260px;
+}
+
+.emergencies-page__table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 640px) {
+  .emergencies-page__header {
+    flex-direction: column;
+  }
+
+  .emergencies-page__export-button {
+    align-self: flex-start;
+  }
+}

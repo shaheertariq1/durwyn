@@ -1,0 +1,51 @@
+.settings-select {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.settings-select__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--admin-text);
+}
+
+.settings-select__control {
+  position: relative;
+  width: 100%;
+}
+
+.settings-select__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 32px 16px 12px;
+  border-radius: 16px;
+  border: 1.085px solid var(--admin-border-strong);
+  background: transparent;
+  color: var(--admin-muted);
+  font-family: inherit;
+  font-size: 16px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.settings-select__input:focus-visible {
+  outline: none;
+  border-color: var(--admin-accent);
+}
+
+.settings-select__input option {
+  background: var(--admin-card);
+  color: var(--admin-text);
+}
+
+.settings-select__chevron {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: var(--admin-text);
+  pointer-events: none;
+}

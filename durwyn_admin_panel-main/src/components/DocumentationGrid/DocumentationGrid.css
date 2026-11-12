@@ -1,0 +1,68 @@
+.documentation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.documentation-grid__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 15.085px;
+  border-radius: 11px;
+  border: 1.085px solid rgba(255, 255, 255, 0.07);
+  background: var(--admin-card);
+}
+
+.documentation-grid__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31.486px;
+  height: 31.486px;
+  margin-bottom: 6px;
+  border-radius: 7px;
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--admin-accent);
+}
+
+.documentation-grid__title {
+  margin: 0;
+  font-size: 12.25px;
+  font-weight: 600;
+  color: #e8edf5;
+}
+
+.documentation-grid__subtitle {
+  margin: 0;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: #6b738a;
+}
+
+.documentation-grid__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3.5px;
+  margin-top: 6px;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-accent);
+}
+
+@media (max-width: 1023px) {
+  .documentation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .documentation-grid {
+    grid-template-columns: 1fr;
+  }
+}

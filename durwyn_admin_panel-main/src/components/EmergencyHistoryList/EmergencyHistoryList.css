@@ -1,0 +1,56 @@
+.emergency-history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17.085px;
+  border-radius: 11px;
+  border: 1.085px solid var(--admin-border);
+  background: var(--admin-card);
+}
+
+.emergency-history__title {
+  margin: 0;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.525px;
+  text-transform: uppercase;
+  color: var(--admin-text);
+}
+
+.emergency-history__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.emergency-history__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  background: #1e2330;
+}
+
+.emergency-history__type {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--admin-text);
+}
+
+.emergency-history__meta {
+  margin: 0;
+  font-size: 14px;
+  color: var(--admin-text);
+  opacity: 0.75;
+}

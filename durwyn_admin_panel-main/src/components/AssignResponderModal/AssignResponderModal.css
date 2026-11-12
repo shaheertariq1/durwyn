@@ -1,0 +1,159 @@
+.assign-responder-modal__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(5, 6, 10, 0.72);
+}
+
+.assign-responder-modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  border: 1.085px solid rgba(255, 255, 255, 0.07);
+  border-radius: 11px;
+  background: var(--admin-card);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.assign-responder-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17.5px;
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.07);
+}
+
+.assign-responder-modal__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.assign-responder-modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.483px;
+  height: 24.483px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--admin-text);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.assign-responder-modal__close:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.assign-responder-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 17.5px;
+}
+
+.assign-responder-modal__banner {
+  margin: 0;
+  padding: 11.585px;
+  border: 1.085px solid rgba(59, 130, 246, 0.2);
+  border-radius: 7px;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--admin-blue);
+  font-size: 10.5px;
+}
+
+.assign-responder-modal__field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.assign-responder-modal__label {
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-text);
+}
+
+.assign-responder-modal__select-control {
+  position: relative;
+  width: 100%;
+}
+
+.assign-responder-modal__select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9.085px 28px 9.085px 11.085px;
+  border: 1.085px solid rgba(255, 255, 255, 0.07);
+  border-radius: 7px;
+  background: #1e2330;
+  color: var(--admin-text);
+  font-family: inherit;
+  font-size: 12.25px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.assign-responder-modal__select:focus-visible {
+  outline: none;
+  border-color: var(--admin-blue);
+}
+
+.assign-responder-modal__select option {
+  background: var(--admin-card);
+  color: var(--admin-text);
+}
+
+.assign-responder-modal__chevron {
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  transform: translateY(-50%);
+  color: var(--admin-text);
+  pointer-events: none;
+}
+
+.assign-responder-modal__actions {
+  display: flex;
+  gap: 10.5px;
+  padding-top: 14px;
+}
+
+.assign-responder-modal__button {
+  flex: 1 1 0;
+  padding: 8.75px;
+  border: none;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 12.25px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.assign-responder-modal__button--cancel {
+  background: #1e2330;
+  color: var(--admin-text);
+}
+
+.assign-responder-modal__button--cancel:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.assign-responder-modal__button--assign {
+  background: var(--admin-blue);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.assign-responder-modal__button--assign:hover {
+  background: #2f6fd8;
+}

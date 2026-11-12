@@ -1,0 +1,120 @@
+.contact-details-modal__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(5, 6, 10, 0.72);
+}
+
+.contact-details-modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 336px;
+  border: 1.085px solid rgba(255, 255, 255, 0.07);
+  border-radius: 11px;
+  background: var(--admin-card);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.contact-details-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17.5px;
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.07);
+}
+
+.contact-details-modal__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.contact-details-modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.483px;
+  height: 24.483px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--admin-text);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.contact-details-modal__close:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-details-modal__body {
+  display: flex;
+  flex-direction: column;
+  padding: 17.5px;
+}
+
+.contact-details-modal__identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 15px;
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.07);
+}
+
+.contact-details-modal__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 999px;
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--admin-red);
+  font-size: 12.25px;
+  font-weight: 600;
+}
+
+.contact-details-modal__identity-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-details-modal__name {
+  font-size: 12.25px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.contact-details-modal__subtitle {
+  font-size: 10.5px;
+  color: #6b738a;
+}
+
+.contact-details-modal__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10.5px;
+  padding: 7px 0 8px;
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.04);
+}
+
+.contact-details-modal__label {
+  font-size: 10.5px;
+  color: #6b738a;
+}
+
+.contact-details-modal__value {
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-text);
+}

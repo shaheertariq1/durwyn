@@ -1,0 +1,13 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Production Hardened Rules:
+    // All read and write operations are mediated exclusively through the FastAPI
+    // backend server using the Firebase Admin SDK (which bypasses security rules).
+    // Direct client SDK reads/writes from third parties or browsers are locked down.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.recent-activity {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 500px;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 17px;
+  border-radius: 11px;
+  border: 1.085px solid var(--admin-border);
+  background: var(--admin-card);
+}
+
+.recent-activity__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.recent-activity__title {
+  margin: 0;
+  font-size: 12.25px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.recent-activity__view-all {
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-accent);
+  cursor: pointer;
+}
+
+.recent-activity__view-all:hover {
+  text-decoration: underline;
+}
+
+.recent-activity__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recent-activity__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.recent-activity__item:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.recent-activity__icon {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.5px;
+  height: 24.5px;
+  border-radius: 7px;
+}
+
+.recent-activity__icon--green {
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--admin-accent);
+}
+
+.recent-activity__icon--red {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--admin-red);
+}
+
+.recent-activity__icon--amber {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--admin-amber);
+}
+
+.recent-activity__icon--blue {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--admin-blue);
+}
+
+.recent-activity__text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.recent-activity__item-title {
+  margin: 0;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--admin-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recent-activity__item-detail {
+  margin: 0;
+  font-size: 10px;
+  color: var(--admin-text);
+  opacity: 0.75;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recent-activity__time {
+  flex: none;
+  font-size: 10px;
+  color: var(--admin-text);
+  opacity: 0.6;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .recent-activity__item-detail {
+    white-space: normal;
+  }
+}

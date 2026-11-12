@@ -1,0 +1,109 @@
+.notifications-table {
+  width: 100%;
+  min-width: 900px;
+}
+
+.notifications-table__row {
+  display: grid;
+  grid-template-columns:
+    minmax(170px, 2.2fr) minmax(80px, 0.9fr) minmax(110px, 1.1fr) minmax(90px, 1fr)
+    minmax(80px, 0.9fr) minmax(80px, 0.9fr) 40px;
+  align-items: center;
+  column-gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.notifications-table__row--head {
+  border-bottom: 1.085px solid var(--admin-border-strong);
+  padding-bottom: 16px;
+  margin-bottom: 10px;
+}
+
+.notifications-table__body .notifications-table__row {
+  border-bottom: 1.085px solid rgba(255, 255, 255, 0.04);
+  padding: 11px 0;
+}
+
+.notifications-table__body .notifications-table__row:last-child {
+  border-bottom: none;
+}
+
+.notifications-table__cell {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font-size: 10.5px;
+  color: var(--admin-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notifications-table__row--head .notifications-table__cell {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+}
+
+.notifications-table__cell--actions {
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.notifications-table__cell--title {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  white-space: normal;
+}
+
+.notifications-table__title-text {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.notifications-table__description {
+  font-size: 10px;
+  color: var(--admin-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.notifications-table__cell--type {
+  font-weight: 500;
+}
+
+.notifications-table__type--blue {
+  color: var(--admin-blue);
+}
+
+.notifications-table__type--purple {
+  color: var(--admin-purple);
+}
+
+.notifications-table__type--amber {
+  color: var(--admin-amber);
+}
+
+.notifications-table__type--red {
+  color: var(--admin-red);
+}
+
+.notifications-table__cell--delivered {
+  font-weight: 600;
+}
+
+.notifications-table__empty {
+  margin: 0;
+  padding: 32px 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--admin-muted);
+}

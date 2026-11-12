@@ -1,0 +1,81 @@
+.help-support-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.help-support-page__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.help-support-page__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17.085px;
+  border-radius: 11px;
+  border: 1.085px solid var(--admin-border);
+  background: var(--admin-card);
+}
+
+.help-support-page__panel--faq {
+  gap: 10px;
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+.help-support-page__panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.help-support-page__panel-title {
+  margin: 0;
+  font-size: 12.25px;
+  font-weight: 600;
+  color: var(--admin-text);
+}
+
+.help-support-page__new-ticket-button {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10.5px;
+  border: none;
+  border-radius: 7px;
+  background: var(--admin-accent);
+  color: var(--admin-bg);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.help-support-page__new-ticket-button:hover,
+.help-support-page__new-ticket-button:focus-visible {
+  background: var(--admin-accent-hover);
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  .help-support-page__panel-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .help-support-page__new-ticket-button {
+    align-self: flex-start;
+  }
+}
